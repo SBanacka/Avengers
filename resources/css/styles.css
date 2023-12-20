@@ -173,7 +173,7 @@ h3.Hulk {
 }
 
 .Villains {
-    padding-top:1rem;
+    padding-top:clamp(.1rem, 3vw, 4rem);
     display: flex;
     justify-content: space-evenly;
     align-content: center;
