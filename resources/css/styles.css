@@ -1,13 +1,13 @@
 @font-face {
     font-family: "Heroic";
-    src: url('../resources/fonts/AvengeanceHeroicAvengerBold-MM2J.ttf') format(truetype);
+    src: url('../../resources/fonts/AvengeanceHeroicAvengerBold-MM2J.ttf') format(truetype);
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Mightiest";
-    src: url('../resources/fonts/AvengeanceMightiestAvenger-837g.ttf') format(truetype);
+    src: url('../../resources/fonts/AvengeanceMightiestAvenger-837g.ttf') format(truetype);
     font-weight: normal;
     font-style: normal;
 }
@@ -74,7 +74,7 @@ body{
     background-color: white;
     justify-content: center;
     min-width:16rem;
-    background-image: url("../resources/images/13709.jpg");
+    background-image: url("../../resources/images/13709.jpg");
     background-size: 1600px 1200px;
     flex-direction: column;
     align-items: center;
@@ -109,7 +109,7 @@ body{
     flex-wrap: wrap;
     background-color: white;
     width: 100%;
-    background-image: url("../resources/images/13709.jpg");
+    background-image: url("../../resources/images/13709.jpg");
     background-size: 1600px 1200px;
     
 }
@@ -156,7 +156,7 @@ h3.Hulk {
 
 .Miss{
     display:flex;
-    background-image: url("../resources/images/tower.png");
+    background-image: url("../../resources/images/tower.png");
     background-size: 100% auto;
     background-repeat:no-repeat;
     height: 30vw;
@@ -181,7 +181,7 @@ h3.Hulk {
     flex-wrap: wrap;
     background-color: white;
     width: 100%;
-    background-image: url("../resources/images/13709.jpg");
+    background-image: url("../../resources/images/13709.jpg");
     background-size: 1600px 1200px;
 }
 
@@ -207,7 +207,7 @@ h3.Hulk {
 footer  {
         padding-top:1rem;
         background-color:white;
-        background-image: url("../resources/images/13709.jpg");
+        background-image: url("../../resources/images/13709.jpg");
         background-size: 1600px 1200px;
         text-align: center;
     }
@@ -266,7 +266,7 @@ footer  {
 
     .Miss{
         display:flex;
-        background-image: url("../resources/images/tower.png");
+        background-image: url("../../resources/images/tower.png");
         background-size: 100% 100%;
         background-repeat:no-repeat;
         height: 28vw; 
