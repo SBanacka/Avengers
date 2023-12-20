@@ -1,13 +1,13 @@
 @font-face {
     font-family: "Heroic";
-    src: url('/resources/fonts/AvengeanceHeroicAvengerBold-MM2J.ttf') format(truetype);
+    src: url('../../resources/fonts/AvengeanceHeroicAvengerBold-MM2J.ttf') format(truetype);
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Mightiest";
-    src: url('/resources/fonts/AvengeanceMightiestAvenger-837g.ttf') format(truetype);
+    src: url('../../resources/fonts/AvengeanceMightiestAvenger-837g.ttf') format(truetype);
     font-weight: normal;
     font-style: normal;
 }
