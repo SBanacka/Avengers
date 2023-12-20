@@ -12,6 +12,7 @@
     font-style: normal;
 }
 
+
 p, li, a{
     font-family: "Mightiest", sans-serif;
     font-size: 1.6vw;
@@ -55,7 +56,8 @@ nav a{
 nav a:hover{
     transition: ease-in-out .5s;
     color: white;
-    font-size: 230%;
+    font-size: 300%;
+    Margin-top: 1.5%;
     text-shadow: black 0 0 1rem;
     z-index: 3;
 }
@@ -64,6 +66,7 @@ body{
     background-color:red;
     margin-left: 8rem;
     margin-right: 8rem;
+    min-width: 250px;
 }
 
 .logo{
@@ -73,10 +76,24 @@ body{
     min-width:16rem;
     background-image: url("/resources/images/13709.jpg");
     background-size: 1600px 1200px;
+    flex-direction: column;
+    align-items: center;
 }
 
 .logo img {
     z-index:6;
+}
+
+#Heroes,#Villains
+{
+    text-align:center;
+    font-size: clamp(1.5rem, 4vw, 6rem);
+    color: white;
+    -webkit-text-stroke: .03rem black;
+}
+
+#Villains{
+    box-shadow: 1vw black;
 }
 
 .splash{
@@ -157,25 +174,34 @@ h3.Hulk {
 
 .Villains {
     padding-top:1rem;
-    background-color:white;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    max-height:75rem;
+    flex-wrap: wrap;
+    background-color: white;
+    width: 100%;
     background-image: url("/resources/images/13709.jpg");
     background-size: 1600px 1200px;
-    display:flex;
-    flex-direction: row;
-    width:100%;
 }
 
 
 .Villains img 
 {
+    max-height: 30rem;
     margin: .5rem;
     border: .2rem solid #292929;
     border-right: .25rem solid #292929;
     border-top: .2rem solid #292929;
-    height: 20vw;
-    flex-direction: row;
+    width:80%;
     min-width: 9rem;
     z-index:1;
+}
+
+.Villain
+{
+    width:25%;
+    text-align: center;
 }
 
 footer  {
@@ -183,8 +209,17 @@ footer  {
         background-color:white;
         background-image: url("/resources/images/13709.jpg");
         background-size: 1600px 1200px;
+        text-align: center;
     }
     
+    footer h1 {
+        font-size:180%;
+    }
+
+    footer a {
+        font-size: 120%;
+    }
+
 
 
 @media only screen and (max-width: 925px)
@@ -219,13 +254,15 @@ footer  {
         
     }  
 
-    h3.Cap, h3.Hulk, h3.Ironman, h3.Thor{
+    h3.Cap, h3.Hulk, h3.Ironman, h3.Thor, h3.Kang, h3.Thanos, h3.Ultron, h3.Loki{
         font-size: 5vw;
     }
     
-    p.Cap, p.Hulk, p.Ironman, p.Thor{
+    p.Cap, p.Hulk, p.Ironman, p.Thor, p.Kang, p.Thanos, p.Ultron, p.Loki{
         font-size: 3vw;
     }
+
+    
 
     .Miss{
         display:flex;
@@ -235,7 +272,29 @@ footer  {
         height: 28vw; 
     }
 
-    
+    .Villains {
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap:nowrap;
+        margin-top:0;
+        padding-bottom:1rem;
+        
+    }
+
+    .Villains img {
+        width: 33%;
+        min-width: 6rem;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 0;
+      }
+
+    .Villain {
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        Width: 100%;
+        flex-wrap: wrap;
+     }
     
 }
 
@@ -276,7 +335,7 @@ footer  {
         font-size: 5vw;
     }
 
-    .Heroes{
+    .Heroes {
         align-content: flex-start;
     }
 
@@ -285,13 +344,25 @@ footer  {
         border-bottom-left-radius: 0;
     }
 
-    h3.Cap, h3.Hulk, h3.Ironman, h3.Thor{
+    h3.Cap, h3.Hulk, h3.Ironman, h3.Thor, h3.Kang, h3.Thanos, h3.Ultron, h3.Loki{
         font-size: 8vw;
     }
-    p.Cap, p.Hulk, p.Ironman, p.Thor{
+    p.Cap, p.Hulk, p.Ironman, p.Thor, p.Kang, p.Thanos, p.Ultron, p.Loki{
         font-size: 3vw;
     }
 
+    .Villains {
+        align-content: flex-start;
+    }
+
+    .Villains img {
+        width:30%;
+        border-bottom-left-radius: 0;
+    }
+
+    #Villains{
+        background-color:white;
+    }
 }
 
 @media only screen and (min-width: 1380px)
@@ -311,6 +382,10 @@ footer  {
 @media only screen and (min-width: 1850px)
 {
     .Heroes img{
+        width:320px;
+    }
+
+    .Villains img{
         width:320px;
     }
 }
@@ -333,4 +408,60 @@ footer  {
     .Cornerbox {
         display:none;
     }
+
+      
+
+}
+
+@media only screen and (max-width:400px) {
+    
+    .Miss{
+        display:flex;
+        background-color:#292929;
+        background-image: none;
+        height: 120px;
+    }
+    
+    .MissionStatement{
+        margin:auto;
+        width: 90%;
+        line-height: 150%;
+        text-align: center;
+        -webkit-text-stroke: #292929 .01rem;
+        color: red;
+        font-size: 3vw;
+        text-shadow: black .05rem .05rem;  
+    }
+
+    
+}
+
+@media only screen and (max-width:307px)
+{
+    .Hero, .Villain{
+        justify-content: center;
+    }
+    
+    h3.Cap, h3.Hulk, h3.Ironman, h3.Thor, h3.Kang, h3.Thanos, h3.Ultron, h3.Loki {
+        font-size:1rem;
+    }
+    p.Cap, p.Hulk, p.Ironman, p.Thor, p.Kang, p.Thanos, p.Ultron, p.Loki{
+        font-size: .5rem;
+    }
+
+    .MissionStatement
+    {
+        font-size: .5rem;
+    }
+
+    nav a{
+        font-size:1rem;
+        -webkit-text-stroke-width: .6px;
+    }
+
+    nav a:hover
+    {
+        font-size: 1.2rem;
+    }
+    
 }
